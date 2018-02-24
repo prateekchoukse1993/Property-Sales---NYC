@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0915.2101                               -->
+<workbook original-version='10.3' source-build='10.3.3 (10300.17.0915.2101)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='final_data' inline='true' name='federated.1rvg6y80o1h7ch11jyq3a13qg27b' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_data' name='textscan.0rg4sdr00d5scf1efxb0w1d1qf79'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:\Users\PrateekChoukse\Desktop\MS BAPM\Semester 2\Data Science with Python\Project\nyc-property-sales\final_data.csv' dataRefreshTime='' directory='C:/Users/PrateekChoukse/Desktop/MS BAPM/Semester 2/Data Science with Python/Project/nyc-property-sales' filename='C:\Users\PRATEE~1\AppData\Local\Temp\TableauTemp\179l6he1936fav112ikar1vhx2m2\final_data.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0rg4sdr00d5scf1efxb0w1d1qf79' name='final_data.csv' table='[final_data#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:T10001:no:A1:T10001:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='BOROUGH' ordinal='0' />
+            <column datatype='string' name='NEIGHBORHOOD' ordinal='1' />
+            <column datatype='string' name='BUILDING CLASS CATEGORY' ordinal='2' />
+            <column datatype='string' name='TAX CLASS AT PRESENT' ordinal='3' />
+            <column datatype='integer' name='BLOCK' ordinal='4' />
+            <column datatype='integer' name='LOT' ordinal='5' />
+            <column datatype='string' name='BUILDING CLASS AT PRESENT' ordinal='6' />
+            <column datatype='string' name='ADDRESS' ordinal='7' />
+            <column datatype='string' name='APARTMENT NUMBER' ordinal='8' />
+            <column datatype='integer' name='ZIP CODE' ordinal='9' />
+            <column datatype='integer' name='RESIDENTIAL UNITS' ordinal='10' />
+            <column datatype='integer' name='COMMERCIAL UNITS' ordinal='11' />
+            <column datatype='integer' name='TOTAL UNITS' ordinal='12' />
+            <column datatype='integer' name='LAND SQUARE FEET' ordinal='13' />
+            <column datatype='integer' name='GROSS SQUARE FEET' ordinal='14' />
+            <column datatype='integer' name='YEAR BUILT' ordinal='15' />
+            <column datatype='integer' name='TAX CLASS AT TIME OF SALE' ordinal='16' />
+            <column datatype='string' name='BUILDING CLASS AT TIME OF SALE' ordinal='17' />
+            <column datatype='integer' name='SALE PRICE' ordinal='18' />
+            <column datatype='date' name='SALE DATE' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>BOROUGH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BOROUGH]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>BOROUGH</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NEIGHBORHOOD</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NEIGHBORHOOD]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>NEIGHBORHOOD</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BUILDING CLASS CATEGORY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BUILDING CLASS CATEGORY]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>BUILDING CLASS CATEGORY</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAX CLASS AT PRESENT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TAX CLASS AT PRESENT]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>TAX CLASS AT PRESENT</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BLOCK</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BLOCK]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>BLOCK</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LOT]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>LOT</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BUILDING CLASS AT PRESENT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BUILDING CLASS AT PRESENT]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>BUILDING CLASS AT PRESENT</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ADDRESS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ADDRESS]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>ADDRESS</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>APARTMENT NUMBER</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[APARTMENT NUMBER]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>APARTMENT NUMBER</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIP CODE]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>ZIP CODE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RESIDENTIAL UNITS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RESIDENTIAL UNITS]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>RESIDENTIAL UNITS</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMMERCIAL UNITS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COMMERCIAL UNITS]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>COMMERCIAL UNITS</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL UNITS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL UNITS]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>TOTAL UNITS</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAND SQUARE FEET</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LAND SQUARE FEET]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>LAND SQUARE FEET</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GROSS SQUARE FEET</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GROSS SQUARE FEET]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>GROSS SQUARE FEET</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR BUILT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YEAR BUILT]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>YEAR BUILT</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAX CLASS AT TIME OF SALE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TAX CLASS AT TIME OF SALE]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>TAX CLASS AT TIME OF SALE</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BUILDING CLASS AT TIME OF SALE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BUILDING CLASS AT TIME OF SALE]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>BUILDING CLASS AT TIME OF SALE</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SALE PRICE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SALE PRICE]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>SALE PRICE</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SALE DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[SALE DATE]</local-name>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias>SALE DATE</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[final_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T10001:no:A1:T10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>139141</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Address' datatype='string' name='[ADDRESS]' role='dimension' type='nominal' />
+      <column caption='Apartment Number' datatype='string' name='[APARTMENT NUMBER]' role='dimension' type='nominal' />
+      <column caption='Block' datatype='integer' name='[BLOCK]' role='measure' type='quantitative' />
+      <column caption='Borough' datatype='integer' name='[BOROUGH]' role='measure' type='quantitative' />
+      <column caption='Building Class At Present' datatype='string' name='[BUILDING CLASS AT PRESENT]' role='dimension' type='nominal' />
+      <column caption='Building Class At Time Of Sale' datatype='string' name='[BUILDING CLASS AT TIME OF SALE]' role='dimension' type='nominal' />
+      <column caption='Building Class Category' datatype='string' name='[BUILDING CLASS CATEGORY]' role='dimension' type='nominal' />
+      <column caption='Commercial Units' datatype='integer' name='[COMMERCIAL UNITS]' role='measure' type='quantitative' />
+      <column caption='Gross Square Feet' datatype='integer' name='[GROSS SQUARE FEET]' role='measure' type='quantitative' />
+      <column caption='Land Square Feet' datatype='integer' name='[LAND SQUARE FEET]' role='measure' type='quantitative' />
+      <column caption='Neighborhood' datatype='string' name='[NEIGHBORHOOD]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Residential Units' datatype='integer' name='[RESIDENTIAL UNITS]' role='measure' type='quantitative' />
+      <column caption='Sale Date' datatype='date' name='[SALE DATE]' role='dimension' type='ordinal' />
+      <column caption='Sale Price' datatype='integer' name='[SALE PRICE]' role='measure' type='quantitative' />
+      <column caption='Tax Class At Present' datatype='string' name='[TAX CLASS AT PRESENT]' role='dimension' type='nominal' />
+      <column caption='Tax Class At Time Of Sale' datatype='integer' name='[TAX CLASS AT TIME OF SALE]' role='measure' type='quantitative' />
+      <column caption='Total Units' datatype='integer' name='[TOTAL UNITS]' role='measure' type='quantitative' />
+      <column caption='Year Built' datatype='integer' name='[YEAR BUILT]' role='dimension' type='quantitative' />
+      <column caption='Zip Code' datatype='integer' default-format='*00000' name='[ZIP CODE]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.446429' measure-ordering='alphabetic' measure-percentage='0.553571' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
